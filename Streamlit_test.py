@@ -29,7 +29,7 @@ def main():
     Usr_inpt = st.selectbox("Select" , ["-","Single_Video" , "Playlist"])
     st.button('Start Download')
 
-    while Link or Path == "":
+    while Link and Path != "":
         if Usr_inpt == "Single_Video":
             st.button('Start Download' , on_click=File_Download (Link , Path))
         elif Usr_inpt == "Playlist":
